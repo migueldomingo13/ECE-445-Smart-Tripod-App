@@ -1,4 +1,6 @@
-Smart Motorized Tripod Overview The Smart Motorized Tripod is a real-time camera tracking system designed to automate framing and subject centering. The system integrates an ESP32-S3, Raspberry Pi 4, stepper motors, and a custom PCB to control camera positioning and enable remote operation. Key technologies include OpenCV for object tracking, AirPlay for live streaming, and WebSockets for wireless communication.
+Smart Motorized Tripod Overview 
+
+The Smart Motorized Tripod is a real-time camera tracking system designed to automate framing and subject centering. The system integrates an ESP32-S3, Raspberry Pi 4, stepper motors, and a custom PCB to control camera positioning and enable remote operation. Key technologies include OpenCV for object tracking, AirPlay for live streaming, and WebSockets for wireless communication.
 
 Features Real-Time Tracking: Uses OpenCV on a Raspberry Pi for dynamic subject detection. Motorized Adjustment: Stepper motors adjust camera angles to maintain proper framing. Remote Camera Control: Physical buttons enable zoom, photo capture, and video recording. Low-Latency Communication: WebSockets provide fast, wireless command transmission. Dedicated Wi-Fi Network: ESP32-S3 maintains a stable connection between devices. Custom PCB: Integrates motor drivers, power management, and button inputs. Getting Started
 
