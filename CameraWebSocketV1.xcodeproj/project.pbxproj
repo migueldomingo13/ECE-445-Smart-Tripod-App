@@ -7,15 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		235E587F2DC1A4B600E80799 /* CommandLatencyTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235E587E2DC1A4A800E80799 /* CommandLatencyTracker.swift */; };
 		23FB09152D81577C005D26C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FB09142D81577C005D26C7 /* AppDelegate.swift */; };
 		23FB09172D81577C005D26C7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FB09162D81577C005D26C7 /* SceneDelegate.swift */; };
 		23FB09192D81577C005D26C7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FB09182D81577C005D26C7 /* ViewController.swift */; };
 		23FB091C2D81577C005D26C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23FB091A2D81577C005D26C7 /* Main.storyboard */; };
 		23FB091E2D81577D005D26C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23FB091D2D81577D005D26C7 /* Assets.xcassets */; };
 		23FB09212D81577D005D26C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23FB091F2D81577D005D26C7 /* LaunchScreen.storyboard */; };
+		23FB09292D81610A005D26C7 /* CameraController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FB09282D81610A005D26C7 /* CameraController.swift */; };
+		23FB092B2D8167FA005D26C7 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FB092A2D8167FA005D26C7 /* File.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		235E587E2DC1A4A800E80799 /* CommandLatencyTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandLatencyTracker.swift; sourceTree = "<group>"; };
 		23FB09112D81577C005D26C7 /* CameraWebSocketV1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CameraWebSocketV1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		23FB09142D81577C005D26C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		23FB09162D81577C005D26C7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +28,8 @@
 		23FB091D2D81577D005D26C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		23FB09202D81577D005D26C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		23FB09222D81577D005D26C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		23FB09282D81610A005D26C7 /* CameraController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraController.swift; sourceTree = "<group>"; };
+		23FB092A2D8167FA005D26C7 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +46,7 @@
 		23FB09082D81577C005D26C7 = {
 			isa = PBXGroup;
 			children = (
+				23FB09282D81610A005D26C7 /* CameraController.swift */,
 				23FB09132D81577C005D26C7 /* CameraWebSocketV1 */,
 				23FB09122D81577C005D26C7 /* Products */,
 			);
@@ -56,6 +63,7 @@
 		23FB09132D81577C005D26C7 /* CameraWebSocketV1 */ = {
 			isa = PBXGroup;
 			children = (
+				235E587E2DC1A4A800E80799 /* CommandLatencyTracker.swift */,
 				23FB09142D81577C005D26C7 /* AppDelegate.swift */,
 				23FB09162D81577C005D26C7 /* SceneDelegate.swift */,
 				23FB09182D81577C005D26C7 /* ViewController.swift */,
@@ -63,6 +71,7 @@
 				23FB091D2D81577D005D26C7 /* Assets.xcassets */,
 				23FB091F2D81577D005D26C7 /* LaunchScreen.storyboard */,
 				23FB09222D81577D005D26C7 /* Info.plist */,
+				23FB092A2D8167FA005D26C7 /* File.swift */,
 			);
 			path = CameraWebSocketV1;
 			sourceTree = "<group>";
@@ -138,8 +147,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23FB092B2D8167FA005D26C7 /* File.swift in Sources */,
 				23FB09192D81577C005D26C7 /* ViewController.swift in Sources */,
 				23FB09152D81577C005D26C7 /* AppDelegate.swift in Sources */,
+				235E587F2DC1A4B600E80799 /* CommandLatencyTracker.swift in Sources */,
+				23FB09292D81610A005D26C7 /* CameraController.swift in Sources */,
 				23FB09172D81577C005D26C7 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -290,11 +302,13 @@
 				DEVELOPMENT_TEAM = 9SU6A4A8GZ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CameraWebSocketV1/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app needs camera access to take photos.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "This app needs microphone access for video recording.";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "This app saves captured photos to your photo library.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -318,11 +332,13 @@
 				DEVELOPMENT_TEAM = 9SU6A4A8GZ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CameraWebSocketV1/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app needs camera access to take photos.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "This app needs microphone access for video recording.";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "This app saves captured photos to your photo library.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
